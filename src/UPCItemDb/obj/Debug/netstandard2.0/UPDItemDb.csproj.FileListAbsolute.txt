@@ -1,0 +1,9 @@
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPDItemDb\bin\Debug\netstandard2.0\UPDItemDb.deps.json
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPDItemDb\bin\Debug\netstandard2.0\UPDItemDb.dll
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPDItemDb\obj\Debug\netstandard2.0\UPDItemDb.csprojResolveAssemblyReference.cache
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPDItemDb\obj\Debug\netstandard2.0\UPDItemDb.csproj.CoreCompileInputs.cache
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPDItemDb\obj\Debug\netstandard2.0\UPDItemDb.AssemblyInfoInputs.cache
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPDItemDb\obj\Debug\netstandard2.0\UPDItemDb.AssemblyInfo.cs
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPDItemDb\bin\Debug\netstandard2.0\UPDItemDb.pdb
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPDItemDb\obj\Debug\netstandard2.0\UPDItemDb.dll
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPDItemDb\obj\Debug\netstandard2.0\UPDItemDb.pdb

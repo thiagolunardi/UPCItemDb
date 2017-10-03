@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{57F5255B-9665-4970-BE5F-85DEF9C7E3C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPCItemDB.Tests", "UPCItemDB.Tests\UPCItemDB.Tests.csproj", "{42715379-E146-47A7-83DD-108C00CB5095}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UPCItemDb", "UPCItemDb\UPCItemDb.csproj", "{903F3EC5-0DCD-4F7D-9364-3F6E639A4CD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42715379-E146-47A7-83DD-108C00CB5095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42715379-E146-47A7-83DD-108C00CB5095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42715379-E146-47A7-83DD-108C00CB5095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42715379-E146-47A7-83DD-108C00CB5095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903F3EC5-0DCD-4F7D-9364-3F6E639A4CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903F3EC5-0DCD-4F7D-9364-3F6E639A4CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903F3EC5-0DCD-4F7D-9364-3F6E639A4CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903F3EC5-0DCD-4F7D-9364-3F6E639A4CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{42715379-E146-47A7-83DD-108C00CB5095} = {57F5255B-9665-4970-BE5F-85DEF9C7E3C8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A286C18B-139B-4D7C-AC8F-F8ECDBBA769B}
+	EndGlobalSection
+EndGlobal

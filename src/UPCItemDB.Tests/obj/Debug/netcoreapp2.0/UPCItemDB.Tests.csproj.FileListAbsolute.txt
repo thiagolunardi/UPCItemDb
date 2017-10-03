@@ -1,0 +1,16 @@
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\bin\Debug\netcoreapp2.0\UPCItemDB.Tests.deps.json
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\bin\Debug\netcoreapp2.0\UPCItemDB.Tests.runtimeconfig.json
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\bin\Debug\netcoreapp2.0\UPCItemDB.Tests.runtimeconfig.dev.json
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\bin\Debug\netcoreapp2.0\UPCItemDB.Tests.dll
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\bin\Debug\netcoreapp2.0\UPCItemDB.Tests.pdb
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\obj\Debug\netcoreapp2.0\UPCItemDB.Tests.csprojResolveAssemblyReference.cache
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\obj\Debug\netcoreapp2.0\UPCItemDB.Tests.csproj.CoreCompileInputs.cache
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\obj\Debug\netcoreapp2.0\UPCItemDB.Tests.AssemblyInfoInputs.cache
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\obj\Debug\netcoreapp2.0\UPCItemDB.Tests.AssemblyInfo.cs
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\obj\Debug\netcoreapp2.0\UPCItemDB.Tests.dll
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\obj\Debug\netcoreapp2.0\UPCItemDB.Tests.pdb
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\bin\Debug\netcoreapp2.0\UPCItemDb.dll
+C:\GitHub\ThiagoLunardi\UPCItemDb\src\UPCItemDB.Tests\bin\Debug\netcoreapp2.0\UPCItemDb.pdb
