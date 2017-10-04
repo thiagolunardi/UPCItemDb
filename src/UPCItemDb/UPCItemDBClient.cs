@@ -13,7 +13,7 @@ using UPCItemDb.Responses;
 
 namespace UPCItemDb
 {
-    public class UPCItemDBClient
+    public class UPCItemDBClient : IDisposable
     {
         private readonly FlurlClient _client;
         private readonly Url _apiBaseUrl;
@@ -127,6 +127,12 @@ namespace UPCItemDb
                 .ReceiveJson<ItemsResponse>();
 
             return items.AssignRateLimit(_rateLimitResponse);
+        }
+
+        public void Dispose()
+        {
+            _client.Dispose();
+            GC.SuppressFinalize(this);
         }
     }
 }
