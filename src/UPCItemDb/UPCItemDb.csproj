@@ -2,6 +2,20 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.1.0</Version>
+    <Authors>thiago.lunardi</Authors>
+    <Company>thiago.lunardi</Company>
+    <Product>UPCItemDb SDK</Product>
+    <Description>An easy to use SDK for consuming UPCItemDb API</Description>
+    <PackageLicenseUrl>https://github.com/thiagolunardi/UPCItemDb/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/thiagolunardi/UPCItemDb</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/thiagolunardi/UPCItemDb/blob/master/nuget_icon.jpg</PackageIconUrl>
+    <RepositoryUrl>https://github.com/thiagolunardi/UPCItemDb</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>udp,ean,barcode</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Copyright>2017</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

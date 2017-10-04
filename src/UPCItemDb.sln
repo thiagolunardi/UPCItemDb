@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UPCItemDB.Tests", "UPCItemD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UPCItemDb", "UPCItemDb\UPCItemDb.csproj", "{903F3EC5-0DCD-4F7D-9364-3F6E639A4CD8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{7B504215-A6EE-41CB-AA67-5B8F530DE139}"
+	ProjectSection(SolutionItems) = preProject
+		nuget_icon.jpg = nuget_icon.jpg
+		UPCItemDb\UPCItemDb.nuspec = UPCItemDb\UPCItemDb.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
