@@ -59,9 +59,9 @@ namespace UPCItemDB.Tests
         [Fact]
         public async Task Search_Items_By_Brand_By_Post()
         {
-            var items = await _upcItemDbClient.SearchByPostAsync(new SearchParameters("tablet")
+            var items = await _upcItemDbClient.SearchByPostAsync(new SearchParameters("iphone")
             {
-                Brand = "nokia"
+                Brand = "Apple"
             });
 
             Assert.NotNull(items);
