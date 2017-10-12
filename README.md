@@ -24,7 +24,7 @@ You can install UPCITemDb SDK from Nuget:
 
     PM> Install-Package UPCItemDb    
 
-All of the requests can be accessed through a `UPCItemDb` client instance. Instantiate one client with empty API key for testing purpose - their will be limitation, and 100 reqs/day/IP, [check here for more](https://devs.upcitemdb.com/#plans) - or with your API dev/prod key:
+All of the requests can be accessed through a `UPCItemDb` client instance. Instantiate one client with empty API key for testing purpose - their will be limitation, and 100 reqs/day/IP, [check here for more](http://www.upcitemdb.com/wp/docs/main/plan/#free-vs-paid) - or with your API dev/prod key:
 
     var upcItemDbClient = new UpcItemDbClient();
     
