@@ -20,7 +20,7 @@ You can also build using the solution in Visual Studio 2017 or later.
 
 ## Basic Usage
 
-You can install UPCITemDb SDK from Nuget:
+You can install [UPCITemDb SDK from Nuget](nuget.org/packages/upcitemdb):
 
     PM> Install-Package UPCItemDb    
 
