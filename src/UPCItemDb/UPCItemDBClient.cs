@@ -26,49 +26,52 @@ namespace UPCItemDb
 
         public UPCItemDBClient(UPCItemDBEnvironment env = UPCItemDBEnvironment.Trial, string userKey = "")
         {
-            _client = new FlurlClient(cfg =>
-            {
-                cfg.BeforeCall = call =>
-                {
-                    call.Request.Headers.Add("key_type", "3scale");
-                    if (string.IsNullOrEmpty(userKey)) return;
-                    call.Request.Headers.Add("user_key", userKey);
-                };
-                cfg.OnError = call =>
-                {
-                    ErrorResponse = JsonConvert.DeserializeObject<ErrorResponse>(call.ErrorResponseBody);
-                };
-
-                cfg.AfterCall = call =>
-                {
-                    if (!call.Succeeded) return;
-
-                    int.TryParse(call.Response.Headers.GetValues("x-ratelimit-remaining").First(), out int remaining);
-                    int.TryParse(call.Response.Headers.GetValues("x-ratelimit-reset").First(), out int resetEpochSeconds);
-                    int.TryParse(call.Response.Headers.GetValues("x-ratelimit-limit").First(), out int limit);
-
-                    var current = 0;
-                    if(call.Response.Headers.TryGetValues("x-ratelimit-current", out IEnumerable<string> currents))
-                        int.TryParse(currents.First(), out current);
-
-                    var reset = _epoch.AddSeconds(resetEpochSeconds);
-
-                    _rateLimitResponse = new RateLimitResponse
-                    {
-                        Remaining = remaining,
-                        Limit = limit,
-                        Current = current,
-                        Reset = reset
-                    };
-                };
-
-                cfg.JsonSerializer = new NewtonsoftJsonSerializer(new JsonSerializerSettings
-                {
-                    ContractResolver = new CamelCasePropertyNamesContractResolver()
-                });
-            });
+            _client = new FlurlClient();
+            ConfigureClient(_client.Settings, userKey);
             _apiBaseUrl = new Url("https://api.upcitemdb.com/prod/")
                 .AppendPathSegment(env.ToBaseUrl());
+        }
+
+        private void ConfigureClient(FlurlHttpSettings cfg, string userKey)
+        {
+            cfg.BeforeCall = call =>
+            {
+                call.Request.Headers.Add("key_type", "3scale");
+                if (string.IsNullOrEmpty(userKey)) return;
+                call.Request.Headers.Add("user_key", userKey);
+            };
+            cfg.OnError = call =>
+            {
+                ErrorResponse = JsonConvert.DeserializeObject<ErrorResponse>(call.ErrorResponseBody);
+            };
+
+            cfg.AfterCall = call =>
+            {
+                if (!call.Succeeded) return;
+
+                int.TryParse(call.Response.Headers.GetValues("x-ratelimit-remaining").First(), out int remaining);
+                int.TryParse(call.Response.Headers.GetValues("x-ratelimit-reset").First(), out int resetEpochSeconds);
+                int.TryParse(call.Response.Headers.GetValues("x-ratelimit-limit").First(), out int limit);
+
+                var current = 0;
+                if (call.Response.Headers.TryGetValues("x-ratelimit-current", out IEnumerable<string> currents))
+                    int.TryParse(currents.First(), out current);
+
+                var reset = _epoch.AddSeconds(resetEpochSeconds);
+
+                _rateLimitResponse = new RateLimitResponse
+                {
+                    Remaining = remaining,
+                    Limit = limit,
+                    Current = current,
+                    Reset = reset
+                };
+            };
+
+            cfg.JsonSerializer = new NewtonsoftJsonSerializer(new JsonSerializerSettings
+            {
+                ContractResolver = new CamelCasePropertyNamesContractResolver()
+            });
         }
 
         public async Task<ItemsResponse> LookupByGetAsync(params string[] codes)
